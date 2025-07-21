@@ -1,0 +1,55 @@
+@keyframes backgroundo {
+    0%{
+        background: black;
+    }
+    20%{
+        background: blue;
+    }
+    40%{
+        background: yellow;
+    }
+    60%{                           
+        background: green;
+    }
+    70%{
+        background: orange;
+    }
+    100%{
+        background: black;
+    }
+}
+body{
+    background: linear-gradient(90deg, black 60%, green);
+    font-family: 'Segoe UI';
+    color: white;
+    animation: infinite;
+    animation-name: backgroundo;
+    animation-duration: 40s;
+}
+.perfil{
+    position: absolute;
+    left: 80%;
+    top: 20%;
+}
+.menu{
+    position: absolute;
+    left: 5%;
+    top: 40%;
+}
+button{
+    background: black;
+    margin-top: 30px;
+    margin: 20px;
+    border-color: white;
+    height: 50px;
+    width: 300px;
+    color: white;
+    border-radius: 10px;
+    transition: 500ms;
+}
+button:hover{
+    border-radius: 30px;
+    font-size: 30px;
+    color: black;
+    background: white;
+}
