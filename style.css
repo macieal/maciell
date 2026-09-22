@@ -23,6 +23,7 @@ body {
   font-style: normal;
   background-size: 110%;
   height: 98vh;
+  overflow: hidden;
 }
 .perfil {
   position: absolute;
@@ -75,11 +76,9 @@ button:hover {
   position: absolute;
   left: 50%;
   top: 50%;
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
   display: grid;
   place-items: center;
-  overflow: auto;
+  overflow-y: auto;
   overflow-x: hidden;
 }
 .janela:hover {
