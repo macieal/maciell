@@ -81,9 +81,6 @@ button:hover {
   overflow-y: auto;
   overflow-x: hidden;
 }
-.janela:hover {
-  box-shadow: 0px 0px 20px 5px rgb(255, 255, 255);
-}
 .barrinha1 {
   position: relative;
   transform: translate(-50%, -50%);
