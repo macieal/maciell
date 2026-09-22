@@ -1,77 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap");
 @keyframes backgroundmove {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-body{
-    background: linear-gradient(50deg, rgb(0, 174, 255), orange);
-    background-size: 300% 300%;
-    color: white;
-    animation: infinite;
-    animation-name: backgroundmove;
-    animation-duration: 5s;
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    background-size: 110%;
-    height: 98vh;
+body {
+  background: linear-gradient(50deg, rgb(0, 174, 255), orange);
+  background-size: 300% 300%;
+  color: white;
+  animation: infinite;
+  animation-name: backgroundmove;
+  animation-duration: 5s;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-size: 110%;
+  height: 98vh;
 }
-.perfil{
-    position: absolute;
-    left: 5%;
-    top: 5%;
+.perfil {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 20%;
 }
-.menu{
-    position: absolute;
-    left: 5%;
-    top: 40%;
+.menu {
+  position: absolute;
+  left: 5%;
+  top: 40%;
 }
-button{
-    background: rgb(34, 34, 34);
-    margin-top: 5px;
-    margin: 10px;
-    border: none;
-    height: 50px;
-    width: 300px;
-    color: white;
-    border-radius: 10px;
-    transition: 500ms;
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    cursor: pointer;
+button {
+  background: rgb(34, 34, 34);
+  margin-top: 5px;
+  margin: 10px;
+  border: none;
+  height: 50px;
+  width: 300px;
+  color: white;
+  border-radius: 10px;
+  transition: 500ms;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  cursor: pointer;
 }
-button:hover{
-    border-radius: 40px;
-    color: black;
-    background: white;
+button:hover {
+  color: black;
+  background: white;
 }
-#myname{
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    position: absolute;
-    top: 36%;
-    left: 5%;
+#myname {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.janela{
-    transform: translate(-50%, -50%);
-    background: rgb(54, 54, 54);
-    opacity: 0.2;
-    width: 94vw;
-    height: 94vh;
-    border-radius: 40px;
-    transition: 300ms;
-    position: absolute;
-    left: 50%;
-    top: 50%;
+.janela {
+  transform: translate(-50%, -50%);
+  background: rgb(54, 54, 54, 0.5);
+  width: 94vw;
+  height: 94vh;
+  border-radius: 40px;
+  transition: 300ms;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  display: grid;
+  place-items: center;
+  overflow: auto;
+  overflow-x: hidden;
 }
-.janela:hover{ box-shadow: 0px 0px 20px 5px rgb(255, 255, 255); }
-#linguagens{
-    margin-top: 70px;
-    text-align: center;
+.janela:hover {
+  box-shadow: 0px 0px 20px 5px rgb(255, 255, 255);
+}
+.barrinha1 {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 47%;
+  width: 90%;
+  height: 3vh;
+  background-color: white;
+}
+.barrinha2 {
+  height: 3vh;
+  display: grid;
+  align-items: center;
+  place-items: center;
+}
+hr {
+  width: 100%;
+  padding: 0.2vw;
+  background-color: white;
+  border: none;
 }
